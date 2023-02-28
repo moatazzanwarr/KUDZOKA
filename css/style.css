@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blue-bg {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  top: 0;
+  z-index: -20;
+}
+.waves {
+  position: absolute;
+  width: 76%;
+  bottom: 6.25rem;
+}
+
+/* Start The Nav */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.nav .nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav-left a {
+  margin-left: 1.25rem;
+  color: #757373;
+}
+
+.nav .nav-left .active {
+  position: relative;
+}
+
+.nav .nav-left .active::before {
+  content: "";
+  height: 0.188rem;
+  width: 1.875rem;
+  background-color: #966caf;
+  position: absolute;
+  bottom: -0.313rem;
+  border-radius: 0.313rem;
+  transition: 0.4s ease;
+}
+
+.nav .nav-left .active:hover::before {
+  content: "";
+  height: 0.188rem;
+  width: 100%;
+  background-color: #966caf;
+  position: absolute;
+  bottom: -0.313rem;
+  border-radius: 0.313rem;
+}
+
+.nav .nav-left .link {
+  position: relative;
+}
+
+.nav .nav-left .link::before {
+  content: "";
+  height: 0.188rem;
+  width: 0;
+  background-color: #966caf;
+  position: absolute;
+  bottom: -0.313rem;
+  border-radius: 0.313rem;
+  transition: 0.4s ease;
+}
+
+.nav .nav-left .link:hover::before {
+  width: 100%;
+}
+
+.nav .nav-left .logo {
+  margin-left: 0;
+}
+
+.nav .nav-left .logo img {
+  width: 7.5rem;
+}
+
+.nav .login-btn a {
+  position: relative;
+  color: #757373;
+}
+
+.nav .login-btn a img {
+  width: 70%;
+}
+
+.nav .login-btn a p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* End The Nav */
+
+/* Start The Landing */
+
+.landing {
+  margin-left: 2.5rem;
+}
+
+.landing .cont .caption {
+  /* width: 50%; */
+  width: 37.5rem;
+  color: #757373;
+}
+
+.landing .cont .caption h1 {
+  font-size: 3.125rem;
+  margin-bottom: 1.875rem;
+  font-weight: 500;
+}
+
+.landing .cont .caption h1 span {
+  color: #966caf;
+}
+
+.landing .cont .caption p {
+  line-height: 1.563rem;
+  font-size: 1.25rem;
+}
+
+.landing .cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.landing .cont .images {
+  position: relative;
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.landing .images .bg {
+  width: 37.5rem;
+  position: absolute;
+
+  left: 5rem;
+}
+
+.landing .cont .images .mask {
+  position: absolute;
+  width: 14.375rem;
+  top: -1.25rem;
+  left: 13.75rem;
+}
+
+.landing .cont .images .clouds {
+  position: absolute;
+  width: 18.75rem;
+  top: 16.875rem;
+  left: 12.5rem;
+}
+
+/* End The Landing */
+
+/* Start The Services */
+
+.services {
+  height: 100vh;
+  position: relative;
+}
+
+.services .second {
+  position: absolute;
+  top: 6.25rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+  width: 56.25rem;
+}
+
+.services .img-1 {
+  position: absolute;
+  width: 23.125rem;
+  top: 8.125rem;
+  text-align: center;
+  color: #757373;
+}
+
+.services .img-h5 {
+  font-size: 1.063rem;
+  margin: 0.938rem 0;
+}
+
+.services .img-p {
+  line-height: 1.563rem;
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+}
+
+.services .img-2 {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #757373;
+}
+
+.services .img-3 {
+  position: absolute;
+  right: 9.375rem;
+  bottom: -8.125rem;
+  text-align: center;
+  color: #757373;
+}
+
+.services .img-4 {
+  position: absolute;
+  background-image: url(../images/why_kudzoka_bg.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 25rem;
+  height: 25rem;
+  bottom: -9.375rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services .img-4 h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.services .img-4 h2 span {
+  font-size: 3.125rem;
+}
+
+/* End The Services */
+
+/* Start The Support */
+
+.support {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 9.375rem;
+}
+
+.support .img-2 {
+  text-align: center;
+  color: #757373;
+}
+
+.support .img-2 h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 0.938rem 0;
+}
+
+.support .img-2 p {
+  line-height: 1.563rem;
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+}
+
+/* End The Support */
+
+/* Stert The Footer */
+
+footer {
+  margin-top: 0.625rem;
+  background-image: url(../images/Group\ 1131.png);
+  height: 37.5rem;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 120%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer .footer-left {
+  position: absolute;
+  left: 0;
+  bottom: -17.5rem;
+}
+
+.footer .footer-left .stores {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.footer .footer-left .stores a {
+  display: flex;
+  align-items: center;
+  margin-right: 0.625rem;
+  padding: 0 0.625rem;
+  width: 9.375rem;
+  height: 3.125rem;
+  background: #fff;
+  color: #757373;
+  border-radius: 0.625rem;
+}
+
+.footer .footer-left .stores a div span{
+    font-size: 0.688rem;
+    margin-left: 0.313rem;
+}
+
+.footer .footer-left .stores a p {
+  margin-left: 0.313rem;
+}
+
+.footer .footer-left .social {
+  margin-bottom: 1.25rem;
+}
+
+.footer .footer-left .social a {
+  margin-right: 0.938rem;
+}
+
+.footer .footer-left .links a {
+  color: #fff;
+  margin-right: 1.875rem;
+}
+
+.footer .footer-right {
+  position: absolute;
+  right: 1.25rem;
+  top: -10rem;
+}
+
+.footer .footer-right img {
+  width: 43.75rem;
+}
+/* End The Footer */
